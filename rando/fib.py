@@ -6,10 +6,8 @@ loops = 0
 
 while loops < 100:
     valc = (vala + valb)
-    # print(loops)
     print(valc)
     vala = valb
     valb = valc
-    #rint("Vala", vala)
     loops += 1
 
