@@ -1,7 +1,7 @@
 from sys import argv
 
-script, user_name = argv
-prompt = '> '
+script, user_name, burrito= argv
+prompt = ': '
 
 print(f"Hi {user_name}, I'm the {script} script.")
 print("I'd like to ask you a few questions.")
@@ -20,3 +20,4 @@ You live in {lives}. Not sure where that is.
 And you have a {computer} computer. Is very nice.
 """)
 
+print(f"What do you {burrito}? Yes? Well I never...")
