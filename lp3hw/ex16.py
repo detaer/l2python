@@ -8,7 +8,7 @@ print("If you do want that, hit RETURN.")
 
 input("?")
 
-pritn("Opening the file...")
+print("Opening the file...")
 target = open(filename, 'w')
 
 print("Truncating the file. Goodbye!")
