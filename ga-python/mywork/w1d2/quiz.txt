@@ -1,0 +1,7 @@
+1) true
+2) false
+3) true
+4) true
+5) true
+6) 1, 2, 4, 7, 8, 9
+7) 2
