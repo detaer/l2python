@@ -81,3 +81,13 @@
 # print(Numbers_Count / Numbers_Length )
 # Print numbers.
 # print(numbers)
+
+# visible_colors = ["red", "orange", "yellow", "green", "blue", "violet"]
+# for colors in visible_colors:
+    # print(colors)
+
+# for name in ["Tom", "Deborah", "Murray", "Axel"]:
+ #    print("Now appearing in the Refreshment Room...")  # in the loop
+  #   print(name)                                        # in the loop
+#  print("THUNDEROUS APPLAUSE!")  
+

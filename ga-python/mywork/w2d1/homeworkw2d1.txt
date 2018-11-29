@@ -1,0 +1,56 @@
+time = 17
+
+# If the time of day is before 9 a.m. --> print the quote 
+# "Morning is wonderful. Its only drawback is that it comes at such an inconvenient time of day."
+if time < 9:
+    print("Morning is wonderful. Its only drawback is that it comes at such an inconvenient time of day.")
+
+# Otherwise if the time of day is before or exactly 4 p.m. --> print the quote 
+# "Working hard or hardly working?"
+elif time <= 16:
+    print("Working hard or hardly working?")
+
+# Otherwise, if the time of day is before 8 p.m. --> print the quote 
+# "How did it get so late so soon?"
+elif time < 20:
+    print("How did it get so late so soon?")
+
+# Otherwise if the time of day is before 10 p.m. --> print the quote 
+# "A day without sunshine is like, you know, night."
+elif time < 22:
+    print("A day without sunshine is like, you know, night.")
+
+# Otherwise, for any time 10 p.m. or later --> print the quote 
+# "Burning the midnight oil!"
+elif time > 22:
+    "Burning the midnight oil!"How did it get so late so soon?
+angry = True
+bored = True
+hungry = False
+tired = False
+
+# Example `if` statement:
+# if bored:
+#    print("T-Rex roars! Rawr!")
+
+# If T-Rex is angry, hungry, and bored he will eat the Triceratops.
+if angry and hungry and bored:
+    print("Eat the Triceratops")
+# Otherwise if T-Rex is tired and hungry, he will eat the Iguanadon.
+elif tired and hungry:
+    print("Eat the Iguanadon")
+# Otherwise if T-Rex is hungry and bored, he will eat the Stegasaurus.
+elif hungry and bored:
+    print("Eat the Stegasaurus")
+# Otherwise if T-Rex is tired, he goes to sleep.
+elif tired:
+    print("Is le tired.")
+# Otherwise if T-Rex is angry and bored, he will fight with the Velociraptor.
+elif angry and bored:
+    print("fight with the Velociraptor")
+# Otherwise if T-Rex is angry or bored, he roars.
+elif angry or bored:
+    print("he roars.")
+# Otherwise T-Rex gives a toothy smile.
+else:
+    print("T-Rex gives a toothy smile.")fight with the Velociraptor
