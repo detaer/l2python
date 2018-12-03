@@ -1,7 +1,9 @@
-movie_title = "Back to the Future"
-Movie_Rating = 8
+#Movie Rating Lab
 
-print('The rating for', movie_title, 'is', Movie_Rating)
+#movie_title = "Back to the Future"
+#Movie_Rating = 8
+
+# print('The rating for', movie_title, 'is', Movie_Rating)
 
 # 1. A `list` of movies that includes Back to the Future, Blade, and Spirited Away. Later, we will be using an API to pull a huge list of movies, but for now we will just pretend it only has these three.
 List_Of_Movies = ["Back to the Future", "Blade", "Spirited Away"]
@@ -13,6 +15,9 @@ Movie_Rating = 8
 def Print_Movie_List():
     for movie in List_Of_Movies:
         print(movie)
+
+#tests
+#Print_Movie_List()
 
 # 1. A function that, when called with the name of a movie as its `argument`, will tell the user whether or not that movie is available (i.e. if that movie is in your list of movies).
 def Movie_In_List(Is_It_In):
@@ -27,6 +32,7 @@ def Movie_In_List(Is_It_In):
         print(Is_It_In,"is not in stock.")
         return Movie_In_Stock
 
+#tests
 # Movie_In_List("Singing in the rain")
 # Movie_In_List("Blade")
 
@@ -40,6 +46,7 @@ def What_Is_The_Rating(Movie_Want_rating):
     else:
         print(Movie_Want_rating, "has a rating of",  Movie_Rating, ".")
 
+#tests
 # What_Is_The_Rating("Brundle")
 # What_Is_The_Rating("Blade")
 
@@ -56,10 +63,9 @@ def How_Are_These_Movies(Questionable_Movies):
         elif Movie_Rating < 6:
             print(Movie, "we don't like that movie so much.")
 
+#tests
 Gimmie_Reviews = ["Blade", "Brundle"]
 How_Are_These_Movies(Questionable_Movies = Gimmie_Reviews)
-
-
 
 # 1. Some code that tests each function (think of the possible inputs that a user could put in, and make sure the output of each function is as expected).
 # 1. Meaningful comments and variable names.
