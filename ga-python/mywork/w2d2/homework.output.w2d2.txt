@@ -1,3 +1,8 @@
+blackbook:w2d2 detaer$ python3.7 lab.py
+Blade is in stock.
+Blade is great!
+Brundle is not in stock.
+blackbook:w2d2 detaer$ cat lab.py 
 #Movie Rating Lab
 
 #movie_title = "Back to the Future"
@@ -67,8 +72,3 @@ def How_Are_These_Movies(Questionable_Movies):
 Gimmie_Reviews = ["Blade", "Brundle"]
 How_Are_These_Movies(Questionable_Movies = Gimmie_Reviews)
 
-# 1. Some code that tests each function (think of the possible inputs that a user could put in, and make sure the output of each function is as expected).
-# 1. Meaningful comments and variable names.
-# 1. BONUS: Think of some ways to deal with the fact that users may not correctly capitalize the movie name.
-# If they type in `back to the future` instead of `Back to the Future`, what will happen? How can you fix that? Once you think *conceptually* of the solution,
-# search Google to see if you can find out how to do it in Python.
