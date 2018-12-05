@@ -1,3 +1,4 @@
+# John Lewis w3d1 homework
 # My favorite romance movies
 # title, release year, runtime, tagline, main characters
 romantic_movie1 = ("The Princess Bride", 1987, 98, "The story of a man and a woman who lived happily ever after.", ["Buttercup", "Westley", "Fezzik", "Inigo Montoya", "Vizzini"])
