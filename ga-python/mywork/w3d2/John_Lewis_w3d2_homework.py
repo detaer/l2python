@@ -45,3 +45,11 @@ Jimmy_Franco.Change_Allow_Overdraft_True()
 Jimmy_Franco.withdraw(11.11)
 Jimmy_Franco.Show_Transaction_history()
 
+#All output from this script pasted below this comment as comments
+# Your current balance is 0.0
+# Insuficient funds. The account balance is 11.0
+# Wow they are allowing overdrafts, thats something I woudln't do! Their balance is -35.11
+# ('Deposit', 11.11)
+# ('Withdrawl', 0.11)
+# ('Withdrawl', 11.11)
+# ('Overdraft', 35)
