@@ -53,15 +53,17 @@ class Movie():
                 return(rating['Value'])
 
 def return_single_movie_object(movie_title):
+    """gives back a single movie object from movie_object_list"""
     for movie_object in movie_object_list:
         if movie_object['Title'] == movie_title:
             return movie_object
 
-def print_single_movie_rating(movie_title):
-    if Movie_In_List(Movie_Want_rating) == False:
-        return "Unknown Movie"
-    else:
-        print(f"{Movie_Want_rating} has a rating of {Movie_Rating}.")
+def print_single_movie_rating(movie_query):
+    # this_movie_data = return_single_movie_object(movie_query)
+    this_movie_instance = Movie(this_movie_data) 
+    movie_title = this_movie_instance.get_movie_title()
+    movie_rating = this_movie_instance.get_movie_rating()
+    print(f"The rating for {movie_title} is {movie_rating}")
 
 
 # spirted_away = return_single_movie_object("Spirited Away")
