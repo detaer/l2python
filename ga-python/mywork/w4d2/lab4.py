@@ -59,13 +59,13 @@ def return_single_movie_object(movie_title):
             return movie_object
 
 def print_single_movie_rating(movie_query):
-    # this_movie_data = return_single_movie_object(movie_query)
-    this_movie_instance = Movie(this_movie_data) 
+    this_movie_data = return_single_movie_object(movie_query)
+    this_movie_instance = Movie(this_movie_data)
     movie_title = this_movie_instance.get_movie_title()
     movie_rating = this_movie_instance.get_movie_rating()
     print(f"The rating for {movie_title} is {movie_rating}")
 
-
+def print_all_ratings
 # spirted_away = return_single_movie_object("Spirited Away")
 # print(spirted_away)
 
