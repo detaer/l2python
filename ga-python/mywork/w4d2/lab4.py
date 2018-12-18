@@ -33,24 +33,23 @@ movie_object_list = [{'Title': 'Back to the Future',
 # curr_movie = movie_object_list[0]
 # print(curr_movie
 
-class Movie():
+class Movie:
     """this is the movie object"""
-
     def __init__(self, movie_data):
         self.movie_data = movie_data
         """initing the object and bringing in the data."""
 
     def get_movie_title(self):
-        title = self.movie_data['Title']
         """returns the movie Title"""
-        return title
+        return self.movie_data['Title']
 
-    def get_movie_rating(self):
+    def get_movie_rating(self, source = 'Rotten Tomatoes'):
         """returns the rotten tomatoes rating"""
-        ratings = self.movie_data['Ratings']
-        for rating in ratings:
-            if rating['Source'] == 'Rotten Tomatoes':
+        for rating in self.movie_data['Ratings']:
+            if rating['Source'] == source:
                 return(rating['Value'])
+
+        return(f"Rating for {source} not found!")
 
 def return_single_movie_object(movie_title):
     """gives back a single movie object from movie_object_list"""
@@ -59,22 +58,31 @@ def return_single_movie_object(movie_title):
             return movie_object
 
 def print_single_movie_rating(movie_query):
+    """ prist a movie rating for the moved string passed into this method"""
     this_movie_data = return_single_movie_object(movie_query)
     this_movie_instance = Movie(this_movie_data)
     movie_title = this_movie_instance.get_movie_title()
     movie_rating = this_movie_instance.get_movie_rating()
-    print(f"The rating for {movie_title} is {movie_rating}")
+    print(f"The rating for {movie_title} is {movie_rating}.")
 
-def print_all_ratings
-# spirted_away = return_single_movie_object("Spirited Away")
-# print(spirted_away)
+def print_all_ratings(movie_list):
+    """ print an opinion of each movie in the list given its range of ratings on rotten tomatoes"""
+    for movie in movie_list:
+        this_movie_data = return_single_movie_object(movie)
+        this_movie_instance = Movie(this_movie_data)
+        movie_title = this_movie_instance.get_movie_title()
+        movie_rating = float(this_movie_instance.get_movie_rating())
+        if movie_rating >= 80:
+            print(movie_title, 'is a great movie!')
+        elif movie_rating >=60:
+            print(movie_title, 'is a good movie.')
+        elif movie_rating < 60:
+            print(movie_title, 'is a bad movie.')
 
-# init_movies = Movie(movie_object_list)
+def main():
+    """ Run all of this"""
+    print_all_ratings(['Blade', 'Spirited Away', 'Back to the Future'])
+    print_single_movie_rating('Spirited Away')
 
-# title = init_movies.get_movie_title()
-# print(title)
-    
-
-
-
-
+if __name__ == '__main__':
+    main()
