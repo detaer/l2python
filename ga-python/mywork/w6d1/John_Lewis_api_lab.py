@@ -118,21 +118,20 @@ def main():
     default_movie_list = ['Blade', 'Spirited Away', 'Back to the Future']
     print("\nThanks for using Movie CLI! \n")
     print_all_ratings(default_movie_list)
-    print("\n")
     
     while True:
         # TODO: Use "input" to create a prompt that will tell the user to select 1 to search for a movie, 
         # or 2 to find the rating of a specific movie, or 3 to quit
-        user_input = int(input("Movie CLI ver. 3.14!\nSelect One:\n1: Search for a movie\n2: Rating of a specific movie\n3: Quit\n: "))
+        user_input = int(input("\nMovie CLI ver. 3.14!\nSelect One:\n1: Search for a movie\n2: Rating of a specific movie\n3: Quit\n: "))
 
         # TODO: Create an if-elif-else conditional:
         
         # If the user input a "1" above, prompt the user to input a movie title and run list_search_results on the input
         if user_input == 1:
-            print("You selected: Search for a movie")
+            print("You selected: Search for a movie\n")
             movie_title = input("Movie Title you would like to search for: ")
-            list_search_results(movie_title)
             print("\n")
+            list_search_results(movie_title)
         # If the user input a "2" above, prompt the user to input a movie titla and run print_single_movie_rating
         elif user_input == 2:
             print("You selected: Rating of a specific movie")
