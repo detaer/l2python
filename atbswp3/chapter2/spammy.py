@@ -1,4 +1,4 @@
-spam = 2
+spam = int(input("Gimme an int:"))
 if spam == 1:
     print('Hello')
 elif spam == 2:
