@@ -20,6 +20,19 @@ def getAnswer(answerNumber):
     elif answerNumber == 9:
         return 'Very doubtful'
 
+print("Ask a question of the mighty 8ball")
+input("Type your question here:")
+print("How hard do you want to shake the 8 ball?")
+intensity=""
+intensity=input("Hard, Soft, Weak")
+
+if intensity == "Hard":
+    print("Ohh gutsy")
+elif intensity == "Soft":
+    print("Bold move cotton, lets see how this plays out")
+else:
+    print("Really? Thats gonna help get the answer you are looking for?")
+
 r = random.randint(1, 9)
 fortune = getAnswer(r)
 print(fortune)
