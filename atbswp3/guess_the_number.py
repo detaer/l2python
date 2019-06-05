@@ -1,5 +1,6 @@
-import random
-secretNumber = random.randint(1, 20)
+from random import randint as randoNumbo
+secretNumber = randoNumbo(1, 20)
+# print(secretNumber)
 print('I am thinking of a number between 1 and 20.')
 
 #Ask the player to guess 6 times.
